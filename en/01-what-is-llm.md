@@ -17,24 +17,18 @@ Although an LLM does not “understand” language like a human, its ability to 
 At its core, an LLM is a prediction engine. It reads a sequence of tokens and predicts the next one.
 
 The process looks simple, but the scale is massive:
-
-| Scale | Scope |
-| --- | --- |
-| Parameters | billions |
-| Training tokens | trillions |
-| Training examples | millions |
+- billions of parameters
+- trillions of tokens
+- millions of training examples
 
 This is like autocomplete on your phone, scaled up to cover entire paragraphs, documents, code, and dialogue.
 
 ### What does an LLM learn?
-Rather than memorizing sentences, an LLM learns patterns in language.
-
-| What the model learns | Why it matters |
-| --- | --- |
-| Grammar and syntax | Produces fluent, grammatically correct text |
-| Semantics and meaning | Understands relationships between words and concepts |
-| Style and tone | Adapts to writing voices and formats |
-| Logical structure and reasoning patterns | Supports coherent explanations and reasoning |
+Rather than memorizing sentences, an LLM learns patterns in language. It captures:
+- grammar and syntax
+- semantics and meaning
+- style and tone
+- logical structure and reasoning patterns
 
 ### Why Transformers matter
 Modern LLMs are built on Transformer architectures. Transformers use **self-attention** to determine which tokens should influence each other, even if they are far apart in the text.
@@ -71,15 +65,17 @@ This happens because the model learns the structure of human communication, not 
 ## Key Questions
 
 ### What is the difference between a simple language model and an LLM?
+Simple models, such as n-gram or rule-based systems, use shallow statistics and short context windows. They:
+- rely on only a few prior words
+- are brittle with unseen inputs
+- cannot capture long-range dependencies
+- produce local, often incoherent predictions
 
-| Feature | Simple language model | LLM |
-| --- | --- | --- |
-| Context window | Short, only a few prior words | Long, can capture distant token relationships |
-| Learning | Shallow statistics | Deep patterns and representations |
-| Generalization | Brittle on unseen inputs | Stronger generalization across domains |
-| Output quality | Often local and incoherent | More coherent, context-aware, and structured |
-
+LLMs, by contrast, are deep Transformer-based models that learn relationships between tokens and concepts across long distances.
 **Simple models see sequences; LLMs see structure.**
+
+
+
 
 ### Why do LLMs use tokens instead of words?
 Language is irregular. Words vary in length, meaning, and frequency, and new words appear constantly.
@@ -93,6 +89,8 @@ This lets the model handle unknown words and learn word structure through compon
 
 Popular tokenization methods such as BPE and WordPiece save vocabulary size while preserving expressiveness.
 
+
+
 ### Why does more data increase the capabilities of an LLM?
 More data exposes the model to more language patterns, styles, domains, and reasoning structures.
 
@@ -101,15 +99,17 @@ With small datasets, the model learns only shallow or local patterns. With massi
 - long-range dependencies
 - reasoning strategies
 - domain-specific conventions
-
 **More data → more patterns → deeper learning → stronger capabilities.**
+
+
 
 ### Why can LLMs generate meaningful text using only next-token prediction?
 Next-token prediction is not random guessing. It learns the full probability distribution of language, including how words and ideas connect.
 
 Self-attention allows the model to build global coherence, not just local correctness. As it scales, the model begins to capture semantics, logic, argument flow, and even coding patterns.
-
 **predicting the next token → modeling language structure → modeling thought structure**
+
+
 
 ### Why do LLMs not have “real understanding”?
 Understanding requires grounding in experience, perception, goals, and a model of the world.
@@ -124,34 +124,32 @@ They generate plausible answers by modeling statistical patterns, not by forming
 
 > **Important:** LLMs simulate understanding; they do not actually understand.
 
+
+
 ---
 
 ## What an LLM Can Do
 Because an LLM models language structure, it can perform many tasks:
 
-| Capability | Example |
-| --- | --- |
-| Generate coherent text | Write articles, summaries, or responses |
-| Answer questions | Provide information based on context |
-| Summarize documents | Condense long text into key points |
-| Translate languages | Convert text between languages |
-| Write and debug code | Generate and troubleshoot code snippets |
-| Analyze data | Interpret text-based data and insights |
-| Reason through problems | Solve logical or conceptual tasks |
-| Interact with tools and agents | Use external systems through prompts |
+- generate coherent text
+- answer questions
+- summarize documents
+- translate languages
+- write and debug code
+- analyze data
+- reason through problems
+- interact with tools and agents
 
 These abilities are emergent, not explicitly programmed.
 
 ## What an LLM Cannot Do
 LLMs have important limitations:
 
-| Limitation | Why it matters |
-| --- | --- |
-| No true understanding | They model patterns, not reality |
-| No memory unless context is provided | They cannot recall past interactions on their own |
-| Can hallucinate incorrect information | Generated outputs may be plausible but wrong |
-| Cannot access real-time data without tools | They are static unless connected to external sources |
-| No intent, beliefs, or consciousness | They do not have goals or awareness |
+- no true understanding of the world
+- no memory unless context is provided
+- can hallucinate incorrect information
+- cannot access real-time data without external tools
+- no intent, beliefs, or consciousness
 
 Their “intelligence” is based on learned patterns, not human cognition.
 
