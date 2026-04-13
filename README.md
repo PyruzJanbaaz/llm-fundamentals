@@ -1,1 +1,1 @@
-# llm-fundamentals
+# LLM Fundamentals
