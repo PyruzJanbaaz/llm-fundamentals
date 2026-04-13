@@ -1,4 +1,4 @@
-## Core Concept 1 — What is NLP?
+## What is NLP?
 
 NLP stands for *Natural Language Processing*, the field of AI that enables computers to work with human language. Human language is messy, ambiguous, irregular, and full of exceptions. NLP provides the foundational techniques that allow machines to read, interpret, analyze, and generate text in a way that resembles human communication.
 
@@ -101,7 +101,7 @@ NLP is the ground layer of the entire AI language ecosystem.
 
 ---
 
-## Core Concept 2 — What is a Token?
+## What is a Token?
 
 A token is the smallest unit of text that a language model processes.
 It is **not** the same as a word. Human words vary in length, structure, and form, and new words appear constantly. If a model worked directly with whole words, it would need to memorize millions of them, which is inefficient and impractical.
@@ -160,7 +160,7 @@ Tokens are the **fundamental computational unit** of LLMs.
 
 ---
 
-## Core Concept 3 — What is an Embedding?
+## What is an Embedding?
 
 An embedding is a numerical representation of meaning.
 Since computers cannot understand text directly, language must be converted into numbers.
@@ -239,7 +239,7 @@ Embeddings are the core mechanism that allows LLMs to understand meaning rather 
 
 ---
 
-## Core Concept 4 — What are Sequence and Context?
+## What are Sequence and Context?
 
 Language is not just a list of words.
 It is a **sequence** of tokens whose meaning depends on their **context**.
@@ -323,7 +323,7 @@ Without these two concepts, nothing in modern LLMs makes sense.
 
 ---
 
-## Core Concept 5 — What is a Probability Distribution?
+## What is a Probability Distribution?
 
 A probability distribution describes how likely each token is to be the next token.
 LLMs do not “choose words”; they assign probabilities.
@@ -353,7 +353,7 @@ Understanding distributions explains why models hallucinate, why temperature mat
 
 ---
 
-## Core Concept 6 — What is a Language Model?
+## What is a Language Model?
 
 A language model predicts the next token in a sequence.
 That is the fundamental operation behind all LLMs.
@@ -372,7 +372,7 @@ It is the foundation of RAG systems, agents, chatbots, and reasoning engines.
 
 ---
 
-## Core Concept 7 — What is Attention?
+## What is Attention?
 
 Attention is a mechanism that assigns importance to different tokens.
 Not all words matter equally.
@@ -385,7 +385,7 @@ Attention creates weighted relationships between tokens, enabling long-range und
 
 ---
 
-## Core Concept 8 — What is Self-Attention?
+## What is Self-Attention?
 
 Self-Attention allows **every token to attend to every other token** in the sequence.
 
@@ -400,7 +400,7 @@ Self-Attention is the core innovation behind the Transformer architecture.
 
 ---
 
-## Core Concept 9 — What is a Transformer?
+## What is a Transformer?
 
 A Transformer is a neural architecture built around Self-Attention.
 It processes all tokens in parallel and learns global relationships.
@@ -416,7 +416,7 @@ All modern LLMs are Transformers.
 
 ---
 
-## Core Concept 10 — What is a Context Window?
+## What is a Context Window?
 
 A context window is the maximum number of tokens an LLM can consider at once.
 
@@ -434,7 +434,7 @@ Context windows are one of the most important constraints in LLM design.
 
 ---
 
-## Core Concept 11 — What is Positional Encoding?
+## What is Positional Encoding?
 
 Self-Attention does not inherently understand order.
 If you shuffle a sentence, the attention mechanism cannot detect the change.
@@ -450,7 +450,7 @@ Positional Encoding is essential for understanding sentence structure and long-r
 
 ---
 
-## Core Concept 12 — What is a Feed-Forward Network?
+## What is a Feed-Forward Network?
 
 After Self-Attention, each Transformer layer includes a small neural network called a Feed-Forward Network (FFN).
 
@@ -465,7 +465,7 @@ It acts as a semantic filter that refines the information extracted by attention
 
 ---
 
-## Core Concept 13 — What is Layer Normalization?
+## What is Layer Normalization?
 
 Layer Normalization stabilizes training by normalizing activations within each layer.
 
@@ -480,7 +480,7 @@ Transformers rely heavily on LayerNorm to remain trainable at scale.
 
 ---
 
-## Core Concept 14 — What is Masking?
+## What is Masking?
 
 Masking hides certain tokens so the model cannot attend to them.
 
@@ -493,7 +493,7 @@ Masking ensures correct sequence behavior, stable training, and proper batching.
 
 ---
 
-## Core Concept 15 — What are Logits?
+## What are Logits?
 
 Logits are the raw outputs of the model **before** they are converted into probabilities.
 
@@ -509,7 +509,7 @@ Logits are essential for:
 
 ---
 
-## Core Concept 16 — What is Softmax?
+## What is Softmax?
 
 Softmax converts raw logits into a probability distribution.
 
@@ -525,7 +525,7 @@ Softmax is essential for sampling, temperature scaling, and top-k/top-p filterin
 
 ---
 
-## Core Concept 17 — What is Sampling? (Greedy, Top-k, Top-p)
+## What is Sampling? (Greedy, Top-k, Top-p)
 
 Sampling determines how the next token is chosen from a probability distribution.
 
@@ -545,7 +545,7 @@ Sampling controls creativity, determinism, and risk in generation.
 
 ---
 
-## Core Concept 18 — What is Temperature?
+## What is Temperature?
 
 Temperature controls how sharp or flat the probability distribution becomes.
 
@@ -557,7 +557,7 @@ Temperature modifies logits before Softmax and is a key tool for controlling mod
 
 ---
 
-## Core Concept 19 — What is a Loss Function? (Cross-Entropy)
+## What is a Loss Function? (Cross-Entropy)
 
 A loss function measures how wrong the model is.
 LLMs almost always use **cross-entropy loss**.
@@ -575,7 +575,7 @@ Loss functions drive training and quality improvement.
 
 ---
 
-## Core Concept 20 — What is Training vs Inference?
+## What is Training vs Inference?
 
 LLMs operate in two phases:
 
