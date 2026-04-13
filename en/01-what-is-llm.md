@@ -5,7 +5,6 @@ A Large Language Model (LLM) is an artificial intelligence system trained on mas
 
 Although an LLM does not “understand” language in the human sense, its ability to model the structure of language makes its behavior appear intelligent.
 
----
 
 ## What an LLM Is
 At the simplest level, an LLM is a text prediction machine. It looks at previous tokens and predicts the most likely next one. This is similar to the autocomplete on your phone, but scaled up to billions of parameters and trained on vast corpora of books, articles, code, and conversations.
@@ -18,7 +17,6 @@ When these attention mechanisms are stacked across many layers, the model begins
 
 At the AI engineering level, an LLM is not just a language model; it is a **structure prediction engine**. By predicting the next token, it implicitly predicts the structure of thought. Human reasoning, explanation, and problem-solving all follow patterns, and the model learns these patterns through exposure to large-scale data. This is why an LLM can perform tasks that appear to require understanding: it has learned the statistical structure of how humans express understanding.
 
----
 
 ## How an LLM Works
 During training, the model processes billions of text sequences and repeatedly attempts to predict the next token. Each prediction updates the model’s parameters, gradually shaping its internal representation of language. Over time, the model becomes extremely good at predicting coherent, contextually appropriate continuations.
@@ -40,7 +38,6 @@ But the emergent behavior is complex:
 
 This emergence happens because the model has learned the structure of human communication.
 
----
 
 ## What an LLM Can Do
 Because an LLM models the structure of language, it can perform a wide range of tasks:
@@ -56,7 +53,7 @@ Because an LLM models the structure of language, it can perform a wide range of 
 
 These abilities are not explicitly programmed. They emerge from the model’s exposure to diverse patterns in the training data.
 
----
+
 
 ## What an LLM Cannot Do
 Despite its impressive capabilities, an LLM has limitations:
@@ -69,7 +66,7 @@ Despite its impressive capabilities, an LLM has limitations:
 
 Its intelligence is a reflection of learned statistical patterns, not human cognition.
 
----
+
 
 ## Why LLMs Matter
 LLMs represent a shift from task-specific machine learning to general-purpose reasoning engines. They can be integrated into larger systems:
@@ -81,7 +78,7 @@ LLMs represent a shift from task-specific machine learning to general-purpose re
 
 The future of AI systems is built around LLMs as the core reasoning component, augmented by external tools, structured data, and domain-specific logic.
 
----
+
 
 ## Summary
 An LLM is a Transformer-based model trained to predict the next token. Through this simple objective, it learns the structure of language, thought, and reasoning. It does not understand in the human sense, but it can generate behavior that appears intelligent. LLMs are powerful components for building modern AI systems, especially when combined with retrieval, agents, and production infrastructure.
