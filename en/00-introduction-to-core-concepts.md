@@ -15,7 +15,7 @@ flowchart LR
   E --> F[Applications]
 ```
 
----
+___
 
 ### Why does NLP exist?
 
