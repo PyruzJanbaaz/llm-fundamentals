@@ -6,13 +6,18 @@
 
 NLP stands for *Natural Language Processing*, the field of AI that enables computers to work with human language. Human language is messy, ambiguous, irregular, and full of exceptions. NLP provides the foundational techniques that allow machines to read, interpret, analyze, and generate text in a way that resembles human communication.
 
-```mermaid
-flowchart LR
-  A[Raw text] --> B[Tokenization]
-  B --> C[Embeddings]
-  C --> D[Transformer]
-  D --> E[Output]
-  E --> F[Applications]
+```text
+Raw text
+   ↓
+Tokenization
+   ↓
+Embeddings
+   ↓
+Transformer
+   ↓
+Output
+   ↓
+Applications
 ```
 
 
