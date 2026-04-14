@@ -33,26 +33,6 @@ This architecture is the foundation of GPT, Claude, Gemini, LLaMA, and all moder
 
 ---
 
-## Why the Transformer Was a Breakthrough
-Before Transformers, models processed text one token at a time.  
-This caused several problems:
-
-- long‑range dependencies were hard to learn  
-- training was slow and sequential  
-- parallelization was limited  
-- context understanding was shallow  
-
-The Transformer solved all of these by:
-
-- processing all tokens simultaneously  
-- learning relationships between any two tokens  
-- scaling efficiently on GPUs  
-- enabling deep semantic modeling  
-
-This architecture is the foundation of GPT, Claude, Gemini, LLaMA, and all modern LLMs.
-
----
-
 ## The Core Components of a Transformer
 A Transformer layer consists of four major components:
 
