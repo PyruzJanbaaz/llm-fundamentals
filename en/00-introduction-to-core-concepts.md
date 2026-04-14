@@ -1,6 +1,19 @@
+# Introduction to Core Concepts
+
+> Tags: `#NLP` `#LLM` `#Tokenization` `#Embeddings` `#Attention`
+
 ## What is NLP?
 
 NLP stands for *Natural Language Processing*, the field of AI that enables computers to work with human language. Human language is messy, ambiguous, irregular, and full of exceptions. NLP provides the foundational techniques that allow machines to read, interpret, analyze, and generate text in a way that resembles human communication.
+
+```mermaid
+flowchart LR
+  A[Raw text] --> B[Tokenization]
+  B --> C[Embeddings]
+  C --> D[Transformer]
+  D --> E[Output]
+  E --> F[Applications]
+```
 
 ---
 
@@ -25,18 +38,20 @@ NLP provides the tools to make this complexity manageable.
 
 ### What does NLP actually do?
 
-NLP includes a set of core tasks that form the foundation of modern language models:
+NLP includes a set of core tasks that form the foundation of modern language models.
 
-- **Tokenization** — breaking text into smaller units
-- **Normalization** — cleaning and standardizing text
-- **Part-of-Speech Tagging** — identifying grammatical roles
-- **Parsing** — understanding sentence structure
-- **Named Entity Recognition (NER)** — detecting people, places, organizations
-- **Semantic Analysis** — understanding meaning
-- **Sentiment Analysis** — detecting emotional tone
-- **Machine Translation** — translating between languages
-- **Summarization** — condensing long text
-- **Text Generation** — producing new text
+| Task | Purpose |
+| --- | --- |
+| **Tokenization** | Breaking text into smaller units |
+| **Normalization** | Cleaning and standardizing text |
+| **Part-of-Speech Tagging** | Identifying grammatical roles |
+| **Parsing** | Understanding sentence structure |
+| **Named Entity Recognition (NER)** | Detecting people, places, organizations |
+| **Semantic Analysis** | Understanding meaning |
+| **Sentiment Analysis** | Detecting emotional tone |
+| **Machine Translation** | Translating between languages |
+| **Summarization** | Condensing long text |
+| **Text Generation** | Producing new text |
 
 These tasks are the building blocks of every LLM.
 
@@ -105,6 +120,13 @@ NLP is the ground layer of the entire AI language ecosystem.
 
 A token is the smallest unit of text that a language model processes.
 It is **not** the same as a word. Human words vary in length, structure, and form, and new words appear constantly. If a model worked directly with whole words, it would need to memorize millions of them, which is inefficient and impractical.
+
+Example:
+
+```text
+"I love NLP."
+["I", "love", "NL", "P", "."]
+```
 
 A token can be:
 
@@ -181,6 +203,14 @@ Embeddings create a semantic space where:
 - similar words are close
 - unrelated words are far apart
 - relationships between concepts are preserved
+
+| Use case | Why it matters |
+| --- | --- |
+| Similarity search | Finds related text |
+| Clustering | Groups similar content |
+| Classification | Separates topics accurately |
+| Retrieval (RAG) | Fetches relevant documents |
+| Recommendation | Suggests context-aware content |
 
 Without embeddings, a model cannot:
 
@@ -332,12 +362,12 @@ Example:
 
 After the text: `I went to the`
 
-The model might output:
-
-- `"store"` → 0.52
-- `"gym"` → 0.21
-- `"library"` → 0.14
-- `"moon"` → 0.0003
+```text
+"store" → 0.52
+"gym" → 0.21
+"library" → 0.14
+"moon" → 0.0003
+```
 
 The model predicts probabilities; sampling chooses the actual token.
 
