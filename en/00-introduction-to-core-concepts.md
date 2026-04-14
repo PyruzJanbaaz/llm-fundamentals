@@ -15,7 +15,6 @@ flowchart LR
   E --> F[Applications]
 ```
 
-***
 
 ### Why does NLP exist?
 
@@ -34,7 +33,6 @@ Language is challenging because it is:
 
 NLP provides the tools to make this complexity manageable.
 
----
 
 ### What does NLP actually do?
 
@@ -55,7 +53,6 @@ NLP includes a set of core tasks that form the foundation of modern language mod
 
 These tasks are the building blocks of every LLM.
 
----
 
 ### NLP before LLMs
 
@@ -76,7 +73,6 @@ These approaches were limited because they:
 
 NLP was useful, but not powerful.
 
----
 
 ### NLP after LLMs
 
@@ -95,7 +91,6 @@ Modern NLP systems can:
 
 Today’s models like GPT, Claude, Gemini, Llama, and Copilot are essentially **advanced NLP systems** built on top of massive data and the Transformer architecture.
 
----
 
 ### Why is NLP important for this book?
 
@@ -114,7 +109,6 @@ Without understanding NLP, later chapters do not make sense.
 
 NLP is the ground layer of the entire AI language ecosystem.
 
----
 
 ## What is a Token?
 
@@ -138,7 +132,6 @@ A token can be:
 
 In short, a token is a **piece of text that the model can understand and compute on**.
 
----
 
 ### Why are tokens important?
 
@@ -153,7 +146,6 @@ Tokens allow the model to:
 
 Without tokens, LLMs would not be able to process natural language.
 
----
 
 ### What is tokenization?
 
@@ -166,7 +158,6 @@ Common algorithms include:
 
 These methods split text in a way that balances vocabulary size, efficiency, and expressiveness.
 
----
 
 ### Why do tokens matter for AI engineers?
 
@@ -180,7 +171,6 @@ Tokens determine:
 
 Tokens are the **fundamental computational unit** of LLMs.
 
----
 
 ## What is an Embedding?
 
@@ -194,7 +184,6 @@ An embedding is a **vector**, such as:
 
 This vector represents the meaning of a token, word, sentence, or even an entire document.
 
----
 
 ### Why are embeddings important?
 
@@ -223,7 +212,6 @@ Without embeddings, a model cannot:
 
 Embeddings are the foundation of semantic understanding.
 
----
 
 ### How are embeddings learned?
 
@@ -235,7 +223,6 @@ During training, the model observes patterns such as:
 
 These patterns are encoded into vectors that capture semantic relationships.
 
----
 
 ### Embeddings are not only for words
 
@@ -252,7 +239,6 @@ Embeddings can represent:
 
 Modern LLMs use token embeddings, positional embeddings, and sometimes sentence or document embeddings.
 
----
 
 ### Why do embeddings matter for AI engineers?
 
@@ -267,7 +253,6 @@ Embeddings power real-world systems:
 
 Embeddings are the core mechanism that allows LLMs to understand meaning rather than just text.
 
----
 
 ## What are Sequence and Context?
 
@@ -275,7 +260,6 @@ Language is not just a list of words.
 It is a **sequence** of tokens whose meaning depends on their **context**.
 These two concepts are fundamental to how LLMs understand and generate text.
 
----
 
 ### What is a Sequence?
 
@@ -295,7 +279,6 @@ A sequence defines:
 
 Sequence is the structural backbone of language.
 
----
 
 ### What is Context?
 
@@ -319,7 +302,6 @@ Context includes:
 
 Context resolves ambiguity and reveals meaning.
 
----
 
 ### Sequence + Context = Language Understanding
 
@@ -335,7 +317,6 @@ Together, they enable:
 
 LLMs rely on both to interpret and produce meaningful language.
 
----
 
 ### Why does this matter for AI engineers?
 
@@ -351,7 +332,6 @@ Sequence and context are the foundation of:
 
 Without these two concepts, nothing in modern LLMs makes sense.
 
----
 
 ## What is a Probability Distribution?
 
@@ -381,7 +361,6 @@ Probability distributions are the core of:
 
 Understanding distributions explains why models hallucinate, why temperature matters, and how creativity emerges.
 
----
 
 ## What is a Language Model?
 
@@ -400,7 +379,6 @@ The output appears intelligent.
 A language model is a probabilistic function operating over sequences and context.
 It is the foundation of RAG systems, agents, chatbots, and reasoning engines.
 
----
 
 ## What is Attention?
 
@@ -413,7 +391,6 @@ The model must connect `dog → was hungry`, not `cat → was hungry`.
 
 Attention creates weighted relationships between tokens, enabling long-range understanding and semantic structure.
 
----
 
 ## What is Self-Attention?
 
@@ -428,7 +405,6 @@ This enables:
 
 Self-Attention is the core innovation behind the Transformer architecture.
 
----
 
 ## What is a Transformer?
 
@@ -444,7 +420,6 @@ Transformers enable:
 
 All modern LLMs are Transformers.
 
----
 
 ## What is a Context Window?
 
@@ -462,7 +437,6 @@ Larger context windows enable:
 
 Context windows are one of the most important constraints in LLM design.
 
----
 
 ## What is Positional Encoding?
 
@@ -478,7 +452,6 @@ Positional Encoding solves this by adding numerical vectors that represent:
 These vectors are added to token embeddings, giving the model a sense of order.
 Positional Encoding is essential for understanding sentence structure and long-range relationships.
 
----
 
 ## What is a Feed-Forward Network?
 
@@ -493,7 +466,6 @@ The FFN:
 
 It acts as a semantic filter that refines the information extracted by attention.
 
----
 
 ## What is Layer Normalization?
 
@@ -508,7 +480,6 @@ It helps:
 
 Transformers rely heavily on LayerNorm to remain trainable at scale.
 
----
 
 ## What is Masking?
 
@@ -521,7 +492,6 @@ Two major types:
 
 Masking ensures correct sequence behavior, stable training, and proper batching.
 
----
 
 ## What are Logits?
 
@@ -537,7 +507,6 @@ Logits are essential for:
 - top-k and top-p filtering
 - controlling creativity and determinism
 
----
 
 ## What is Softmax?
 
@@ -553,7 +522,6 @@ Softmax:
 
 Softmax is essential for sampling, temperature scaling, and top-k/top-p filtering.
 
----
 
 ## What is Sampling? (Greedy, Top-k, Top-p)
 
@@ -573,7 +541,6 @@ More adaptive and natural.
 
 Sampling controls creativity, determinism, and risk in generation.
 
----
 
 ## What is Temperature?
 
@@ -585,7 +552,6 @@ Temperature controls how sharp or flat the probability distribution becomes.
 
 Temperature modifies logits before Softmax and is a key tool for controlling model behavior.
 
----
 
 ## What is a Loss Function? (Cross-Entropy)
 
@@ -603,7 +569,6 @@ High loss = poor prediction
 
 Loss functions drive training and quality improvement.
 
----
 
 ## What is Training vs Inference?
 
