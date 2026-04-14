@@ -1,4 +1,4 @@
-# AI Systems Architecture — Full Professional Edition
+# AI Systems Architecture
 This handbook is a practical guide to building production-grade AI systems using large language models (LLMs). It combines core theory, engineering best practices, and architectural patterns so that teams can design, deploy, and operate reliable, safe, and scalable AI applications.
 
 The purpose of this book is to help practitioners move beyond prototypes and into production-ready AI systems. It explains how to think about model selection, retrieval, agents, observability, security, and operational maturity — all with practical examples and clear tradeoffs.
