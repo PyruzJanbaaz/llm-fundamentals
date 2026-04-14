@@ -1,3 +1,6 @@
+# Preface
+Modern AI systems are more than models. They are distributed applications composed of prompt logic, retrieval pipelines, routing strategies, evaluation workflows, and operational controls. This book is designed for engineers, architects, product managers, and AI teams who want a solid, practical foundation for building real-world LLM applications.
+
 # Introduction to Core Concepts
 
 > Tags: `#NLP` `#LLM` `#Tokenization` `#Embeddings` `#Attention`
