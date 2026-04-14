@@ -1,5 +1,15 @@
 # Preface
-Modern AI systems are more than models. They are distributed applications composed of prompt logic, retrieval pipelines, routing strategies, evaluation workflows, and operational controls. This book is designed for engineers, architects, product managers, and AI teams who want a solid, practical foundation for building real-world LLM applications.
+The AI landscape is evolving fast, and the biggest challenge is not choosing a model — it is designing an entire system around that model. This book is written for engineers, architects, product leaders, and AI teams who need a grounded, end-to-end playbook for real-world LLM applications.
+
+You will find:
+
+- foundational concepts that explain how LLMs work and why they behave differently from traditional software
+- architectural patterns for retrieval, multi-model routing, agents, and long-term memory
+- operational practices for monitoring, observability, security, governance, and LLMOps
+- practical examples showing how to combine models, data, and infrastructure into robust systems
+- advice for balancing cost, latency, accuracy, safety, and scalability
+
+This handbook is intentionally pragmatic: it is not an academic survey. It is a living reference for people building and operating AI systems that must work consistently in production.
 
 # Introduction to Core Concepts
 
