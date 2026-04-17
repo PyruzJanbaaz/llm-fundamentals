@@ -181,7 +181,6 @@ while not task.complete:
     result = executor.run(action)
     state = memory.update(state, result)
 ```
-```
 
 ---
 
